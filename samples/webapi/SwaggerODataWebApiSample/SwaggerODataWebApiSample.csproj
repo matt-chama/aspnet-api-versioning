@@ -18,8 +18,4 @@
   <PackageReference Include="Swashbuckle.Core" Version="5.6.0" />
  </ItemGroup>
 
- <ItemGroup>
-  <ProjectReference Include="..\..\..\src\Microsoft.AspNet.OData.Versioning.ApiExplorer\Microsoft.AspNet.OData.Versioning.ApiExplorer.csproj" />
- </ItemGroup>
-
 </Project>

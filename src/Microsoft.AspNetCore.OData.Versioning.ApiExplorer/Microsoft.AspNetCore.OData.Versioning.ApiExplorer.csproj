@@ -19,11 +19,6 @@
   <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
  </ItemGroup>
 
- <ItemGroup>
-  <ProjectReference Include="..\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.csproj" />
-  <ProjectReference Include="..\Microsoft.AspNetCore.OData.Versioning\Microsoft.AspNetCore.OData.Versioning.csproj" />
- </ItemGroup>
-
  <Import Project="..\Common.OData.ApiExplorer\Common.OData.ApiExplorer.projitems" Label="Shared" />
  <Import Project="..\Shared\Shared.projitems" Label="Shared" />
 

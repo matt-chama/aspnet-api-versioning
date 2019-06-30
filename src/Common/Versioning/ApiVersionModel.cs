@@ -24,7 +24,7 @@ namespace Microsoft.AspNetCore.Mvc.Versioning
         static readonly Lazy<ApiVersionModel> neutralVersion = new Lazy<ApiVersionModel>( () => new ApiVersionModel( NeutralModel ) );
         static readonly Lazy<ApiVersionModel> emptyVersion = new Lazy<ApiVersionModel>( () => new ApiVersionModel( EmptyModel ) );
 #if WEBAPI
-        static readonly IReadOnlyList<ApiVersion> emptyVersions = new ApiVersion[0];
+        static readonly IReadOnlyList<ApiVersion> emptyVersions = Array.Empty<ApiVersion>();
 #else
         static readonly IReadOnlyList<ApiVersion> emptyVersions = Array.Empty<ApiVersion>();
 #endif

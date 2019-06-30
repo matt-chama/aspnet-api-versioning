@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
  <PropertyGroup>
-  <TargetFramework>net452</TargetFramework>
+  <TargetFramework>net462</TargetFramework>
   <RootNamespace>Microsoft.Web</RootNamespace>
   <DefineConstants>$(DefineConstants);WEBAPI</DefineConstants>
   <NoWarn>CS0618</NoWarn>
@@ -9,7 +9,6 @@
 
  <ItemGroup>
   <ProjectReference Include="..\..\src\Microsoft.AspNet.WebApi.Versioning\Microsoft.AspNet.WebApi.Versioning.csproj" />
-  <ProjectReference Include="..\..\src\Microsoft.AspNet.OData.Versioning\Microsoft.AspNet.OData.Versioning.csproj" />
  </ItemGroup>
 
  <ItemGroup>

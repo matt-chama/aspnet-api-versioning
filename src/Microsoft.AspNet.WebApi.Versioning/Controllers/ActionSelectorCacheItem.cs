@@ -85,7 +85,7 @@
 
                 if ( controllerDescriptor.IsAttributeRouted() )
                 {
-                    selectionCache.StandardCandidateActions = new CandidateAction[0];
+                    selectionCache.StandardCandidateActions = Array.Empty<CandidateAction>();
                 }
                 else
                 {

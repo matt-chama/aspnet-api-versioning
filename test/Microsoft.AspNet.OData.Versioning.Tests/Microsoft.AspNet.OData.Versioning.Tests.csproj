@@ -7,10 +7,6 @@
  </PropertyGroup>
 
  <ItemGroup>
-  <ProjectReference Include="..\..\src\Microsoft.AspNet.OData.Versioning\Microsoft.AspNet.OData.Versioning.csproj" />
- </ItemGroup>
-
- <ItemGroup>
   <Reference Include="Microsoft.CSharp" />
   <Reference Include="System" />
  </ItemGroup>

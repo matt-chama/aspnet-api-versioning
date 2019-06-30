@@ -16,8 +16,4 @@
   <PackageReference Include="Microsoft.AspNet.WebApi.OwinSelfHost" Version="5.2.7" />
  </ItemGroup>
 
- <ItemGroup>
-  <ProjectReference Include="..\..\..\src\Microsoft.AspNet.OData.Versioning\Microsoft.AspNet.OData.Versioning.csproj" />
- </ItemGroup>
-
 </Project>

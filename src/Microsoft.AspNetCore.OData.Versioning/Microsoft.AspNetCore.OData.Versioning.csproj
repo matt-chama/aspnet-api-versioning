@@ -16,10 +16,6 @@
  </ItemGroup>
 
  <ItemGroup>
-  <ProjectReference Include="..\Microsoft.AspNetCore.Mvc.Versioning\Microsoft.AspNetCore.Mvc.Versioning.csproj" />
- </ItemGroup>
-
- <ItemGroup>
   <PackageReference Include="Microsoft.AspNetCore.OData" Version="[7.0.1,8.0.0)" />
  </ItemGroup>
 

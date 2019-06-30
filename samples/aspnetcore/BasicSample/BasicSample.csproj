@@ -12,7 +12,7 @@
  </ItemGroup>
 
  <ItemGroup>
-  <ProjectReference Include="..\..\..\src\Microsoft.AspNetCore.Mvc.Versioning\Microsoft.AspNetCore.Mvc.Versioning.csproj" />
+   <ProjectReference Include="..\..\..\src\Microsoft.AspNet.WebApi.Versioning\Microsoft.AspNet.WebApi.Versioning.csproj" />
  </ItemGroup>
 
 </Project>

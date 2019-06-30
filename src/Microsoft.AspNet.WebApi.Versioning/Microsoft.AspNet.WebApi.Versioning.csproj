@@ -3,7 +3,7 @@
  <PropertyGroup>
   <VersionPrefix>3.0.1</VersionPrefix>
   <AssemblyVersion>3.0.0.0</AssemblyVersion>
-  <TargetFramework>net45</TargetFramework>
+  <TargetFramework>net462</TargetFramework>
   <AssemblyTitle>Microsoft ASP.NET Web API Versioning</AssemblyTitle>
   <Description>A service API versioning library for Microsoft ASP.NET Web API.</Description>
   <RootNamespace>Microsoft.Web.Http</RootNamespace>
