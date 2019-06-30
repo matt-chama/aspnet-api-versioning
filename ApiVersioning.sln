@@ -81,10 +81,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2BB57808
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{3BDDAF5E-4148-4D7F-9B9A-EA11D0110FEB}"
 	ProjectSection(SolutionItems) = preProject
-		tools\code-analysis.ruleset = tools\code-analysis.ruleset
 		tools\custom-dictionary.xml = tools\custom-dictionary.xml
 		tools\key.snk = tools\key.snk
-		tools\stylecop.json = tools\stylecop.json
 	EndProjectSection
 EndProject
 Global

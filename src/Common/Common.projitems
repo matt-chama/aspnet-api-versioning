@@ -16,6 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)CollectionExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ControllerNameAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MapToApiVersionAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)RangeApiVersionAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ReportApiVersionsAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TypeExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UriExtensions.cs" />

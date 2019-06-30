@@ -19,6 +19,7 @@ namespace Microsoft.AspNetCore.Mvc.Versioning
     {
         readonly Lazy<int> computedHashCode;
         readonly Lazy<IReadOnlyList<ApiVersion>> versions;
+        readonly bool isRange = false;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiVersionsBaseAttribute"/> class.
@@ -41,6 +42,16 @@ namespace Microsoft.AspNetCore.Mvc.Versioning
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiVersionsBaseAttribute"/> class.
         /// </summary>
+        /// <param name="minimum">The minimum supported API version.</param>
+        /// <param name="maximum">The maximum supported API version.</param>
+        protected ApiVersionsBaseAttribute( ApiVersion minimum, ApiVersion maximum ) : this(new[] { minimum, maximum } )
+        {
+            isRange = true;
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ApiVersionsBaseAttribute"/> class.
+        /// </summary>
         /// <param name="version">The API version string.</param>
         public ApiVersionsBaseAttribute( string version ) : this( new[] { version } ) => Arg.NotNullOrEmpty( version, nameof( version ) );
 
@@ -55,6 +66,16 @@ namespace Microsoft.AspNetCore.Mvc.Versioning
 
             computedHashCode = new Lazy<int>( () => ComputeHashCode( Versions ) );
             this.versions = new Lazy<IReadOnlyList<ApiVersion>>( () => versions.Select( Parse ).Distinct().ToSortedReadOnlyList() );
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ApiVersionsBaseAttribute"/> class.
+        /// </summary>
+        /// <param name="minimum">The minimum supported API version.</param>
+        /// <param name="maximum">The maximum supported API version.</param>
+        public ApiVersionsBaseAttribute( string minimum, string maximum ) : this(new[] { minimum, maximum })
+        {
+            isRange = true;
         }
 
         static int ComputeHashCode( IEnumerable<ApiVersion> versions )
